@@ -14,7 +14,7 @@ public class Actor {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO) 
-	private int id;
+	private long id;
 	@Column(length=75, nullable=false)
 	private String firstName;
 	@Column(length=75, nullable=true)
@@ -55,6 +55,12 @@ public class Actor {
 	}
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 }

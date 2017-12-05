@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class Movie {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO) 
-	private int id;
+	private long id;
 	@Column(length = 300, nullable=false)
 	private String title;
 	@Column(nullable=true)
@@ -34,7 +34,7 @@ public class Movie {
 	}
 	
 	
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 	public void setId(int id) {
