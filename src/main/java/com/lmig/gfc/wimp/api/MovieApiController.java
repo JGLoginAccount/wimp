@@ -59,7 +59,7 @@ public class MovieApiController {
 	}
 
 	@DeleteMapping("{id}")
-	public Movie deleteDog(@PathVariable long id) {
+	public Movie deleteMovie(@PathVariable long id) {
 		
 		Movie movie=movieRepositories.findOne(id);
 		movieRepositories.delete(id);

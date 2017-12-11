@@ -47,7 +47,6 @@ public class SeedData {
 		
 		ArrayList<Actor> cast= new ArrayList<Actor>();
 		cast.add(actor);
-		
 		movie.setCast(cast);
 		movieRepositories.save(movie);
 		
